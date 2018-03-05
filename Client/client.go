@@ -14,8 +14,8 @@ type Args struct {
 }
 
 func main() {
-
-        client, err := net.Dial("tcp", "172.31.99.166:12347")
+	url := "172.31.99.166:12347"
+        client, err := net.Dial("tcp", url)
         if err != nil {
                 log.Fatal("dialing:", err)
         }
